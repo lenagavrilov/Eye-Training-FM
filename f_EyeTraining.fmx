@@ -1,0 +1,85 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'frm_EyeTraining'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 503.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Line1: TLine
+      LineType = Diagonal
+      Position.X = 64.000000000000000000
+      Position.Y = 236.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Circle1: TCircle
+      Position.X = 48.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      object FloatAnimation1: TFloatAnimation
+        AutoReverse = True
+        Duration = 2.000000000000000000
+        Loop = True
+        PropertyName = 'Position.X'
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+  end
+  object MultiView1: TMultiView
+    TargetControl = Panel1
+    Mode = Panel
+    NavigationPaneOptions.CollapsedWidth = 89.000000000000000000
+    ShadowOptions.Color = claBeige
+    Size.Width = 137.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Ex1: TButton
+      Position.X = 17.000000000000000000
+      Position.Y = 72.000000000000000000
+      TabOrder = 1
+      Text = 'Ex1'
+    end
+    object ex2: TButton
+      Position.X = 17.000000000000000000
+      Position.Y = 120.000000000000000000
+      TabOrder = 0
+      Text = 'ex2'
+    end
+  end
+  object Panel2: TPanel
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnStart: TButton
+      Position.X = 168.000000000000000000
+      Position.Y = 20.000000000000000000
+      TabOrder = 0
+      Text = 'btnStart'
+      OnClick = btnStartClick
+    end
+    object btnStop: TButton
+      Position.X = 336.000000000000000000
+      Position.Y = 20.000000000000000000
+      TabOrder = 1
+      Text = 'Button1'
+      OnClick = btnStopClick
+    end
+  end
+end
